@@ -6,6 +6,8 @@ import (
 	taskQueue "github.com/aeroxmotion/go-event-loop/task_queue"
 )
 
+var DefaultLoop = New()
+
 type EventLoop struct {
 	callStack      *callStack.CallStack
 	taskQueue      *taskQueue.TaskQueue
